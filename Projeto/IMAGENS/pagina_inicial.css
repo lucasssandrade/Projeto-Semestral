@@ -1,0 +1,57 @@
+@import url('./padrões.css');
+
+body {
+    background-image: url('Img_Background.png');
+    opacity: 0.98;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0; /* Remover margens padrão */
+    padding: 0; /* Remover preenchimento padrão */
+}
+
+header img {
+    display: block; /* Alterado para "block" para melhorar a responsividade */
+    width: 50vh; /* Alterado para uma porcentagem */
+    margin: 80vh auto 1vh; /* Margens superior e inferior ajustadas para centralizar verticalmente */
+    margin-top: 0vh; /* Ajuste para subir a imagem 40% em relação à parte superior */
+    
+}
+
+header h1 {
+    text-align: center; /* Centralizar texto */
+    font-size: 5vh; /* Tamanho de fonte ajustável */
+    color:aliceblue;
+    margin-top: 0.5vh;
+}
+
+div {
+    display: flex;
+    flex-wrap: wrap; /* Para que os itens possam quebrar para uma nova linha quando não couberem na largura da tela */
+    justify-content: center; /* Para centralizar os itens horizontalmente */
+}
+
+div a {
+    display: block;
+    width: 45%; /* Definir a largura dos links */
+    margin: 30vh 2.5% auto 2vh; /* Margens entre os links */
+    margin-top: 12vh;
+    background-color: #147eba;
+    text-align: center;
+    font-size:4vh ;
+    border-radius: 20px;
+    box-shadow: 1vh 1vh #03486f ;
+    color: aliceblue;
+    
+}
+
+/* Media query para ajustar a largura dos links em telas menores */
+@media screen and (max-width: 600px) {
+    div a {
+        width: 90%; /* Reduzir a largura dos links para caberem em telas menores */
+    }
+    body{
+        background-image: url('/IMAGENS/background\ ajustado.png');
+    } 
+}
